@@ -1,28 +1,50 @@
 <template>
-    <div>
-        <Topnav />
-        <div class="banner">
-            <h1>wanb-ui</h1>
-            <h2>vue3 base component</h2>
-            <p class="actions">
-                <a>Github</a>
-                <a>Start</a>
-            </p>
-        </div>
+  <div>
+    <Topnav />
+    <div class="banner">
+      <h1>wanb-ui</h1>
+      <h2>vue3 base component</h2>
+      <p class="actions">
+        <a href="https://github.com" target="_blank">Github</a>
+        <router-link to="/doc">Start</router-link>
+      </p>
     </div>
+  </div>
 </template>
 
 <script lang="ts">
-    import Topnav from "../components/Topnav.vue"
+import Topnav from "../components/Topnav.vue";
 
-    export default {
-        name: 'Home',
-        components: {
-            Topnav
-        }
-    }
+export default {
+  name: "Home",
+  components: {
+    Topnav
+  }
+};
 </script>
 
 <style lang="scss" scoped>
+.banner {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: lightgreen;
 
+  > .actions {
+    padding: 8px 0;
+
+    a {
+      margin: 0 8px;
+      background: #fff;
+      display: inline-block;
+      $h: 28px;
+      height: $h;
+      line-height: $h;
+      border-radius: $h/2;
+      padding: 0 8px;
+    }
+  }
+}
 </style>
