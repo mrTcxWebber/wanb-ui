@@ -11,8 +11,9 @@ export const router = createRouter({
         {
             path: '/doc',
             component: Doc,
+            redirect: '/doc/switch',
             children: [
-                { path: 'switch', component: () => import('./components/Switch.vue') },
+                { path: 'switch', name: "Doc", component: () => import('./components/Switch.vue') },
                 { path: 'button', component: () => import('./components/Button.vue') },
                 { path: 'dialog', component: () => import('./components/Dialog.vue') },
                 { path: 'tabs', component: () => import('./components/Tabs.vue') }

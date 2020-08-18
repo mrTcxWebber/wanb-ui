@@ -2,8 +2,8 @@
   <div class="topnav">
     <div class="logo">LOGO</div>
     <ul class="menu">
-      <li>菜单1</li>
-      <li>菜单2</li>
+      <router-link to="/" tags="li">首页</router-link>
+      <router-link to="/doc" tags="li">文档</router-link>
     </ul>
     <span class="toggleAside" @click="toggleMenu"></span>
   </div>
