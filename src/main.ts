@@ -1,6 +1,7 @@
+import './lib/wanbUi.scss'
+import './index.scss'
 import { createApp } from 'vue'
 import App from './App.vue'
-import './index.scss'
 // console.log(111, q)
 import { router } from "./router"
 
